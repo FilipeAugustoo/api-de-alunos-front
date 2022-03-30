@@ -1,0 +1,21 @@
+<main class="container">
+  <table class="tabela">
+    <thead>
+      <tr>
+        <th class="detalhes">ID</th>
+        <th class="detalhes">Nome</th>
+        <th class="detalhes">Série/Ano</th>
+        <th class="detalhes">Nº Matrícula</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="conteudo" *ngFor="let dado of dados">
+        <td class="valores">{{ dado.id }}</td>
+        <td class="valores">{{ dado.nome }}</td>
+        <td class="valores">{{ dado.serieAno }}</td>
+        <td class="valores">{{ dado.matricula }}</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
